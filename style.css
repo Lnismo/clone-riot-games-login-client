@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.screen{
+    display: flex;
+}
+
+#logo{
+    width: 90px;
+    margin: 70px auto;
+}
+
+.container1{
+    text-align: center;
+    width: 30%;
+    height: 100vh;
+}
+
+.caixinha{
+    position: absolute;
+    left: 10vh;
+    bottom: 39vh;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.methods{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.facebook{
+    background: #1877f2;
+    color: white;
+    font-size: 15px;
+    padding: 3px 25px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.google{
+    background: #fff;
+    color: red;
+    font-size: 15px;
+    padding: 3px 25px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.apple{
+    background: black;
+    color: white;
+    font-size: 15px;
+    padding: 3px 25px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.xbox{
+    background: green;
+    color: white;
+    font-size: 15px;
+    padding: 3px 25px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.facebook:hover{
+    background: #1669d6;
+}
+
+.google:hover{
+    background: #ececec;
+}
+
+.apple:hover{
+    background: rgb(20, 20, 20);
+}
+
+.xbox:hover{
+    background: rgb(0, 99, 0);
+}
+
+.email, .pass{
+    background: #ededed;
+    border: none;
+    padding: 15px 10px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.input:hover{
+    background: #dfdfdf;
+    cursor: text;
+    transition: background .2s;
+}
+
+#checkbox{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#checkmark{
+    position: absolute;
+    left: -15px;
+    top: 6px;
+    height: 12px;
+    width: 12px;
+    background-color: #ededed;
+    border-radius: 3px;
+}
+
+label #checkbox:checked ~ #checkmark{
+    background: red;
+}
+
+label #checkbox:checked ~ #checkmark::after{
+    display: block;
+}
+
+label #checkmark:after{
+    left: 3px;
+    top: 1px;
+    width: 3px;
+    height: 6px;
+    border: solid #ededed;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+label{
+    user-select: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.container2{
+    background: black;
+    width: 70%;
+    height: 100vh;
+    color: #a3a5a7;
+    background: url(imagens/wallpaper.png);
+}
+
+.exit{
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    padding: 0px 7px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.exit:hover{
+    background: red;
+}
+
+.minimize{
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    background: none;
+    padding: 0px 7px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.minimize:hover{
+    background: #373b3d;
+}
+
+.user{
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    font-size: 30px;
+    background: #23272b;
+    padding: 0px 8px;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+}
+
+.user:hover{
+    color:#f0f0f0;
+    background: #292d30;
+}
